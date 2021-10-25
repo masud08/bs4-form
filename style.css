@@ -1,0 +1,77 @@
+/*-------------------------
+	Simple reset
+--------------------------*/
+
+
+  
+.get-in-touch{
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  position: relative;
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.3);
+
+}
+.get-in-touch .title{
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 20px;
+  letter-spacing: 5px;
+  line-height: 48px;
+  font-size: 3em;
+  color: #5543ca;
+  background: linear-gradient(to right, #f4524d 0%, #5543ca 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.contact-form .form-field{
+  margin: 30px 0;
+  position: relative;
+}
+.contact-form .input-text{
+  display: block;
+  width: 100%;
+  height: 36px;
+  border-width: 0 0 2px 0;
+  border-color: #5543ca;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+}
+/* .contact-form .input-text:focus + .label,
+.contact-form .input-text.not-empty + .label{
+  transform: translateY(-20px);
+} */
+.contact-form .input-text:not([value=""]) + .label ,.contact-form .input-text:focus + .label {
+
+  transform: translateY(-30px);
+
+}
+.contact-form .input-text:focus{
+  outline: none;
+}
+.contact-form .label{
+  position: absolute;
+  left: 20px;
+  bottom: 10px;
+  border-color: #5543ca;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  cursor: text;
+  text-transform: capitalize;
+  transition: transform 0.2s ease-in-out;
+
+}
+.contact-form .submit-btn{
+  display: inline-block;
+  background-image: linear-gradient(125deg, #a72879, #064497);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 16px;
+  padding: 8px 16px;
+  border: none;
+  width: 200px;
+  cursor: pointer;
+}
